@@ -294,6 +294,19 @@ header {
   display: block;
 }
 
+.no-link {
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.proj-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 18px;
+}
+
 .projects article {
   height: 100%;
   padding: 30px;
