@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-/* Variáveis e reset */
+
 :root {
   --bg: #080b10;
   --surface: #10151d;
@@ -34,13 +34,13 @@ a {
   text-decoration: none;
 }
 
-/* Layout base */
+
 .nav, .hero, .section, .contact, footer {
   width: min(var(--max), calc(100% - 40px));
   margin: auto;
 }
 
-/* Header / navegação */
+
 .nav {
   height: 76px;
   display: flex;
@@ -85,7 +85,7 @@ header {
   font-size: 1.5rem;
 }
 
-/* Hero */
+
 .hero {
   min-height: 92vh;
   padding-top: 140px;
@@ -138,7 +138,7 @@ header {
   color: var(--accent);
 }
 
-/* Bloco de código decorativo do hero */
+
 .code {
   background: #0c1118;
   border: 1px solid var(--line);
@@ -175,7 +175,7 @@ header {
 .code em { color: #c3e88d; font-style: normal; }
 .code strong { color: #f78c6c; }
 
-/* Seções gerais */
+
 .section {
   padding: 110px 0;
 }
@@ -197,7 +197,16 @@ header {
   letter-spacing: -.04em;
 }
 
-/* Sobre mim */
+.avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  margin-bottom: 30px;
+}
+
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -238,7 +247,7 @@ header {
   font-size: .9rem;
 }
 
-/* Seção com fundo escuro (tecnologias) */
+
 .dark {
   width: 100%;
   padding-left: max(20px, calc((100vw - var(--max)) / 2));
@@ -274,7 +283,7 @@ header {
   font-size: .85rem;
 }
 
-/* Projetos */
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -338,7 +347,7 @@ header {
   color: #c6d0dd;
 }
 
-/* Contato */
+
 .contact {
   width: 100%;
   padding: 110px max(20px, calc((100vw - var(--max)) / 2));
@@ -370,7 +379,7 @@ header {
   color: var(--accent);
 }
 
-/* Rodapé */
+
 footer {
   padding: 25px 0;
   color: #687587;
@@ -379,7 +388,7 @@ footer {
   justify-content: space-between;
 }
 
-/* Responsivo */
+
 @media (max-width: 800px) {
   .links {
     display: none;
